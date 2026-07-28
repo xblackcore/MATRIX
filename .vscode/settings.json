@@ -1,0 +1,20 @@
+//┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//┃                                                        ┃
+{
+	"explorer.sortOrderLexicographicOptions": "unicode",// Controls the lexicographic sorting of file and folder names in the Explorer.
+		// default          : Uppercase and lowercase names are mixed together.
+		// lower            : Lowercase names are grouped together before uppercase names.
+		// upper            : Uppercase names are grouped together before lowercase names.
+		// unicode          : Names are sorted in Unicode order.
+	"explorer.sortOrder"            : "mixed",// Controls the property-based sorting of files and folders in the Explorer. When #explorer.fileNesting.enabled# is enabled, also controls sorting of nested files.
+	"python-envs.defaultEnvManager" : "ms-python.python:system",// The default environment manager for creating and managing environments.
+	"python-envs.pythonProjects"    : [// The list of Python projects.
+		{
+			"path"           : ".",
+			"envManager"     : "ms-python.python:venv",
+			"packageManager" : "ms-python.python:pip"
+		}
+	],
+}
+//┃                                                        ┃
+//┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
