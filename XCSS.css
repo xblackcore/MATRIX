@@ -1,17 +1,23 @@
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
 /*#region	 [:root]									 ┃*/
 :root {
-    --color      : #ffffff;
-    --background : #000000;
+    --color           : #ffffff;
+    --background      : #000000;
+    --body-background : #000000;
 }
-U
+    @media (prefers-color-scheme: light) {
+        :root{
+            --background:#ffffff;
+            --color:#000000;
+        }
+    }
 /*#endregion [:root]									 ┃*/
 /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
 /*#region	 [body]										 ┃*/
 body {
     color      : var(--color);
-    background : var(--background);
+    background : var(--body-background);
 }
     /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
     /*#region	 [img]										 ┃*/
