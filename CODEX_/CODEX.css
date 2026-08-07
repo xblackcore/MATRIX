@@ -142,13 +142,14 @@ body {
             position       : relative;
         }
         .Search-input {
-            background  : transparent;
-            border      : none;
-            outline     : none;
-            color       : var(--color);
-            font-size   : 0.9rem;
-            width       : 500px;
-            font-family	: var(--font-family);
+            flex: 1;
+            min-width: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--color);
+            font-size: 0.9rem;
+            font-family: var(--font-family);
         }
             .Search-input-wrap {
                 display: flex;
