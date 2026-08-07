@@ -52,6 +52,6 @@ function Debug(Enable = true) {
 
     });
 }
-Debug(true);
+Debug(false);
 //#endregion [Debug(True)]								   ┃
 //┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
