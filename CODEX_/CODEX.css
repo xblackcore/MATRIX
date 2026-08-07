@@ -105,9 +105,10 @@ body {
 
 .Y0 {
     display                 : flex;
-    align-items             : center;
-    justify-content         : center;
-    background              : rgba(10, 11, 15, 0.75);
+        align-items             : center;
+        justify-content         : center;
+
+        background              : rgba(10, 11, 15, 0.75);
     backdrop-filter         : blur(12px);
     -webkit-backdrop-filter : blur(12px);
     padding                 : 0 12px;
@@ -119,6 +120,7 @@ body {
     transition              : background var(--transition);
 }
     .Search {
+        width: 100%;
         position: relative;
     }
         .SearchIconButton {
@@ -157,7 +159,6 @@ body {
                 border-radius: 30px;
                 padding: 7px 14px;
                 transition: border-color var(--transition), box-shadow var(--transition);
-                min-width: 200px;
             }
                 .Search-input-wrap:focus-within {
                     border-color: var(--color-1);
