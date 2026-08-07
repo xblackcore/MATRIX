@@ -379,11 +379,12 @@ body {
     white-space : nowrap;
     border      : 0;
 }
+
 main {
     margin    : 0 auto;
     padding   : 40px 24px 120px;
 }
-    main :is(h1, h2, h3, p) {
+    main:is(h1, h2, h3, p) {
         scroll-margin-top: calc(var(--height) + 20px);
     }
     main h1 {
@@ -397,7 +398,7 @@ main {
     }
     main p {
         white-space:
-            pre-wrap
+            pre-line
         ;
         font-family: Consolas, monospace;
         color       : var(--color-0);
