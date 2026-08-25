@@ -384,25 +384,24 @@ body {
 
 main {
     margin    : 0 auto;
-    padding   : 40px 24px 120px;
+    padding   : 4px 24px 12px;
 }
-    main:is(h1, h2, h3, p) {
+    main :is(h1, h2, h3, p) {
         scroll-margin-top: calc(var(--height) + 20px);
     }
     main h1 {
         font-size     : 2rem;
-        margin-bottom : 8px;
+        margin-bottom : 4px;
     }
     main h2 {
         font-size  : 1.4rem;
-        margin-top : 24px;
+        margin-top : 1px;
         color      : var(--color-1);
     }
     main p {
-        white-space:
-            pre-line
-        ;
-        font-family: Consolas, monospace;
+        margin      : 0, 0, 4px;
+        white-space : pre-line;
+        font-family : Consolas, monospace;
         color       : var(--color-0);
         line-height : 1.6;
     }
