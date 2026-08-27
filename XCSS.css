@@ -8,7 +8,13 @@
     @media (prefers-color-scheme: light) {
         :root{
             --background:#ffffff;
-            --color:#000000;
+            --color     :#000000;
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        :root{
+            --background:#000000;
+            --color     :#ffffff;
         }
     }
 /*#endregion [:root]									 ┃*/
@@ -16,9 +22,9 @@
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
 /*#region	 [html]										 ┃*/
 html {
-    background	: #000000;
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
+    background	            : #000000;
+    scroll-behavior         : smooth ;
+    -webkit-text-size-adjust: 100%   ;
 }
 /*#endregion [html]										 ┃*/
 /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
@@ -106,15 +112,15 @@ body {
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
 /*#region	 [*]										 ┃*/
 * {
-    margin  : 0;
-    padding: 0;
+    margin    : 0         ;
+    padding   : 0         ;
     box-sizing: border-box;
 }
     /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
     /*#region	 [*::after]									 ┃*/
     *::after {
-        margin: 0;
-        padding: 0;
+        margin    : 0         ;
+        padding   : 0         ;
         box-sizing: border-box;
     }
     /*#endregion [*::after]									 ┃*/
@@ -122,8 +128,8 @@ body {
     /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
     /*#region	 [*::before]								 ┃*/
     *::before {
-        margin: 0;
-        padding: 0;
+        margin    : 0         ;
+        padding   : 0         ;
         box-sizing: border-box;
     }
     /*#endregion [*::before]								 ┃*/
@@ -139,13 +145,12 @@ body {
 /*#region	 [.]										 ┃*/
 .Y {
     flex-direction: column;
-    align-self: center;
+    align-self    : center;
 }
 .X {
-    flex-direction: row;
-    align-self: center;
+    flex-direction: row   ;
+    align-self    : center;
 }
-
 /*#endregion [.]										 ┃*/
 /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
@@ -162,9 +167,9 @@ body {
             /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
             /*#region	 [::webkit-scrollbar]						 ┃*/
             ::-webkit-scrollbar {
-                background: #000000;
-                border-left: 1px solid #00ffff;
-                box-shadow: inset 0 0 10px #000000;
+                background : #000000               ;
+                border-left: 1px solid #00ffff     ;
+                box-shadow : inset 0 0 10px #000000;
             }
             /*#endregion [::webkit-scrollbar]						 ┃*/
             /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
