@@ -7,7 +7,7 @@ package-dir = {"" = "."}
 
 [project]
 name = "XPY"
-version = "0.1.0"
+version = "1.0.0"
 description = "META-Python"
 authors = [
     { name = "Sir. Doyle; S-Class Astartes at BlackCoreΔ" }
