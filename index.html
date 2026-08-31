@@ -1,64 +1,118 @@
+<!--┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓-->
+<!--┃ [!DOCTYPE]                                        ┃-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome.</title>
-    <style>
-        html, body{
-            margin    :0      ;
-            width     :100%   ;
-            height    :100%   ;
-            overflow  :hidden ;
-            background:#000000;
-            color     :#ffffff;
-        }
-        #Loader{
-            position       :fixed       ;
-            inset          :0           ;
-            display        :flex        ;
-            justify-content:center      ;
-            align-items    :center      ;
-            background     :#000      ;
-            z-index        :99999       ;
-            transition     :opacity .35s;
-        }
-        .Circle{
-            width           :70px                    ;
-            height          :70px                    ;
-            border-radius   :50%                     ;
-            border          :4px solid #222          ;
-            border-top-color:#00ffff                 ;
-            animation       :Spin .8s linear infinite;
-        }
-        @keyframes Spin{
-            from{
-                transform:rotate(0deg);
+<!--┃ [!DOCTYPE]                                        ┃-->
+<!--┣━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━┫-->
+<!--┃ [<html>]                                          ┃-->
+<html lang = "en">
+    <!--┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓-->
+    <!--┃ [<head>]                                          ┃-->
+    <head>
+        <!--┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓-->
+        <!--┃ [<meta>]                                          ┃-->
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "
+            width         = device-width,
+            initial-scale = 1.0"
+        >
+        <meta name = "author"		content = "Sir. Doyle; S-Class Astartes at BlackCoreΔ">
+        <meta name = "description"	content = "All is our.">
+        <meta name = "google"		content = "notranslate">
+        <!--┃ [<meta>]                                          ┃-->
+        <!--┣━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━┫-->
+        <!--┃ [<title>]                                         ┃-->
+        <title>CODEX</title>
+        <!--┃ [<title>]                                         ┃-->
+        <!--┣━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━┫-->
+        <!--┃ [<link>]                                          ┃-->
+        <link rel = "icon"       href = "CODEX_/MATRIX.ico" type = "image/ico">
+        <link rel = "stylesheet" href = "XCSS.css">
+        <link rel = "stylesheet" href = "XCSS_/XKEYFRAMES_/Transform.css">
+        <!--┃ [<link>]                                          ┃-->
+        <!--┣━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━┫-->
+        <!--┃ [<script>]                                        ┃-->
+        <!--┃ [<script>]                                        ┃-->
+        <!--┣━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━┫-->
+        <!--┃ [<style>]                                         ┃-->
+        <style>
+            /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
+            /*┃ [*]                                                  ┃*/
+            html, body{
+                margin    : 0        ;
+                width     : 100%     ;
+                height    : 100%     ;
+                overflow  : hidden   ;
+                background: #000000;
+                color     : #ffffff;
             }
-            to{
-                transform:rotate(360deg);
+            /*┃ [*]                                                  ┃*/
+            /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
+            /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
+            /*┃ [.]                                                  ┃*/
+            .Circle{
+                width           : 70px                    ;
+                height          : 70px                    ;
+                border-radius   : 50%                     ;
+                border          : 4px solid #222        ;
+                border-top-color: #00ffff               ;
+                animation       : Spin .8s linear infinite;
             }
-        }
-    </style>
-</head>
-<body>
-    <div id="Loader">
-        <div class="Circle"></div>
-    </div>
-    <script>
-        (async()=>{
-            try{
-                const response = await fetch("CODEX.html");
-                const html = await response.text();
-                document.open();
-                document.write(html);
-                document.close();
+            /*┃ [.]                                                  ┃*/
+            /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
+            /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓*/
+            /*┃ [#]                                                  ┃*/
+            #Loader{
+                position       : fixed       ;
+                inset          : 0           ;
+                display        : flex        ;
+                justify-content: center      ;
+                align-items    : center      ;
+                background     : #000      ;
+                z-index        : 99999       ;
+                transition     : opacity .35s;
             }
-            catch(e){
-                document.body.innerHTML =
-                "<h1 style='color:white;text-align:center;margin-top:100px;'>Error loading CODEX.html</h1>";
-            }
-        })();
-    </script>
+            /*┃ [#]                                                  ┃*/
+            /*┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
+        </style>
+        <!--┃ [<style>]                                         ┃-->
+        <!--┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛-->
+    </head>
+    <!--┃ [<head>]                                          ┃-->
+    <!--┣━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━━ ━┫-->
+    <!--┃ [<body>]                                          ┃-->
+    <body>
+        <!--┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓-->
+        <!--┃ [Loader]											┃-->
+        <div id="Loader">
+            <div class="Circle"></div>
+        </div>
+        <!--┃ [Loader]											┃-->
+        <!--┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛-->
+        <!--┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓-->
+        <!--┃ [script]									    	┃-->
+        <script>
+            (async()=>{
+                try{
+                    const response = await fetch("CODEX.html");
+                    const html = await response.text();
+                    document.open();
+                    document.write(html);
+                    document.close();
+                }
+                catch(e){
+                    document.body.innerHTML =
+                    "<h1 style='color:white;text-align:center;margin-top:100px;'>Error loading CODEX.html</h1>";
+                }
+            })();
+        </script>
+        <!--┃ [script]									    	┃-->
+        <!--┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛-->
+    </body>
+    <!--┃ [<body>]                                          ┃-->
+    <!--┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛-->
+</html>
+<!--┃ [<html>]                                          ┃-->
+<!--┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛-->
+
 </body>
 </html>
