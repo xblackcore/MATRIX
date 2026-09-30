@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "XPY"
+version = "0.0.0"
+description = "Meta Python."
+readme = "CODEX.md"
+requires-python = ">=3.10"
+
+authors = [
+    {name = "BlackCoreΔ"}
+]
